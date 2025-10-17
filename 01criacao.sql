@@ -1,4 +1,3 @@
--- Tabela Cardapio
 CREATE TABLE Cardapio (
     codigo INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100) NOT NULL UNIQUE,
@@ -6,7 +5,7 @@ CREATE TABLE Cardapio (
     preco_unitario DECIMAL(10,2) NOT NULL
 );
 
--- Tabela Comanda
+
 CREATE TABLE Comanda (
     codigo INT PRIMARY KEY AUTO_INCREMENT,
     data DATE NOT NULL,
@@ -14,7 +13,7 @@ CREATE TABLE Comanda (
     nome_cliente VARCHAR(100) NOT NULL
 );
 
--- Tabela ItemComanda
+
 CREATE TABLE ItemComanda (
     codigo_comanda INT,
     codigo_cardapio INT,
